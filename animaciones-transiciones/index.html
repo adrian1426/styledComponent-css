@@ -6,16 +6,22 @@
     <title>transiciones css</title>
 
     <style>
+      @keyframes showUp {
+        from {
+          transform: scale(0.6);
+        }
+
+        to {
+          transform: scale(1);
+        }
+      }
+
       .ball {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         background: tomato;
-        /* transition: all 1.5s ease 1s; */
-        transition-property: all;
-        transition-duration: 1.5s;
-        transition-timing-function: ease;
-        transform-style: 1s;
+        animation: 500ms showUp ease 2 2000ms;
       }
     </style>
   </head>
