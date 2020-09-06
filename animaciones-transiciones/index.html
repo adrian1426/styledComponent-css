@@ -16,12 +16,37 @@
         }
       }
 
+      @keyframes latido {
+        0% {
+          transform: scale(1) translateX(0%);
+          opacity: 0.5;
+          background: purple;
+        }
+
+        50% {
+          transform: scale(0.5) translate(100%);
+          opacity: 1;
+          background: orange;
+        }
+
+        100% {
+          transform: scale(1) translate(0%);
+          opacity: 0.5;
+          background: purple;
+        }
+      }
+
       .ball {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         background: tomato;
-        animation: 500ms showUp ease 2 2000ms;
+        /* animation: 500ms latido ease; */
+        animation-duration: 1s;
+        animation-name: latido;
+        animation-timing-function: ease;
+        animation-iteration-count: 2;
+        animation-delay: 2;
       }
     </style>
   </head>
