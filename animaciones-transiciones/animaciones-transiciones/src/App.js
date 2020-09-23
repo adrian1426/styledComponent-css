@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import './App.css';
+import './AppHeader.css';
 
 function App() {
   const [active, setActive] = useState(false);
