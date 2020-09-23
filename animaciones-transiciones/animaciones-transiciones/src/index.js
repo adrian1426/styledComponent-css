@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Acordeon/App';
+import App from './ReactReveal/App';
 
 ReactDOM.render(
   <React.StrictMode>
