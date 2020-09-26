@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './transition-group-workshop/App';
+import App from './styled-components/App';
 
 ReactDOM.render(
   <React.StrictMode>
